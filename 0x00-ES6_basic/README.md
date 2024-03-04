@@ -136,7 +136,7 @@ module.exports = {
 Don't forget to run `npm install` from the terminal of your project folder to install all necessary project dependencies.
 
 ## Tasks
-### O. Const or let?
+### 0. Const or let?
 ### 1. Block Scope
 ### 2. Arrow functions
 ### 3. Parameter defaults
