@@ -21,7 +21,7 @@ export default class Pricing {
     this._currency = currency;
   }
 
-  displayFullPrice() {
+  static displayFullPrice() {
     return `${this.amount} ${this.currency.name} (${this.currency.code})`;
   }
 }
