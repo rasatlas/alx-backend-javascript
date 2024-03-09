@@ -3,20 +3,18 @@
 
 /**
  * Abstract Class Building.
- *
- * @class Building
  */
 export default class Building {
   constructor(sqft) {
-    this._sqft = sqft;
+    this.sqft = sqft;
   }
 
-  get area() {
+  get sqft() {
     return this._sqft;
   }
 
-  set area(area) {
-    this._sqft = area;
+  set sqft(sqft) {
+    this._sqft = sqft;
   }
 
   evacuationWarningMessage() {
