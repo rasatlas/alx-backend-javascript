@@ -8,7 +8,7 @@ class EVCar extends Car {
   }
 
   cloneCar() {
-    const clone = new Car();
+    const clone = new Car(this.brand, this.color, this.motor);
     return clone;
   }
 }
