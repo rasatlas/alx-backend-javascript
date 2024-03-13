@@ -42,3 +42,19 @@ const createEmployee = (salary: number | string): Director | Teacher => {
   if(typeof salary === 'number' && salary < 500) return new Teacher();
   return new Director();
 };
+
+function isDirector(employee: Director | Teacher): boolean {
+  return (employee instanceof Director); 
+}
+
+function executeWork(employee: Director | Teacher): string {
+  if(employee instanceof Director) return employee.workDirectorTasks();
+  return employee.workTeacherTasks();
+}
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if(todayClass === 'Math') return 'Teaching Math';
+  return 'Teaching History';
+}
